@@ -1,0 +1,721 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    overflow-x: hidden;
+}
+
+body {
+    width: 100vw;
+    background-image: var(--background-body);
+    --background-body: linear-gradient(to bottom, #11191C 14.29%, #212D40 18.06%);
+    --background-header: #11151C;
+
+    --cor-principal-palavras: #FFFFFF;
+    --cor-do-genero-destaque: #d3d3d3;
+    --cor-input: #ffff;
+    --cor-nota-filme: #FBCD6E;
+    --cor-shadow: 0px 6px 4px rgba(0, 0, 0, 0.7);
+    --imagem: linear-gradient(to top, transparent 0%, rgb(255, 255, 255) 20%);
+    --categorias: #FFFFFF;
+    --header-titulo: #D9D9D9;
+
+    overflow-x: hidden;
+
+}
+
+.header {
+    background-color: var(--background-header);
+    width: 100vw;
+    padding: 15px 10vw;
+
+    display: flex;
+    justify-content: space-between;
+
+    position: fixed;
+    z-index: 2;
+
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 48px;
+
+
+    color: var(--header-titulo);
+}
+
+.filme-do-dia {
+    position: absolute;
+    width: 100vw;
+    height: 63vh;
+    object-fit: cover;
+
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+
+    -webkit-mask-image: var(--imagem);
+
+    opacity: 60%;
+
+    z-index: -1;
+}
+
+.informacao-destaque {
+    display: flex;
+    flex-direction: column;
+
+    padding: 28vh 0 0 1vw;
+
+    width: 40vw;
+}
+
+.titulo__filme-destaque,
+.sinopse__filme-destaque,
+.btn__filme-destaque {
+    color: var(--cor-principal-palavras);
+}
+
+.titulo-nota__filme-destaque {
+    display: flex;
+    gap: 16px;
+}
+
+.titulo__filme-destaque {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 48px;
+
+    padding: 0 0 2vh 3vw;
+}
+
+.nota__filme-destaque {
+    color: var(--cor-nota-filme);
+
+    padding-top: 1.5vh;
+
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.organizacao-sinopse__filme-destaque {
+    display: flex;
+}
+
+.hr__filme-destaque {
+    width: 0;
+    height: 100px;
+    border: 2px solid var(--cor-principal-palavras);
+
+    margin-left: 2vw;
+}
+
+.sinopse__filme-destaque {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+
+    padding: 0vh 0 2vh 1vw;
+}
+
+.btn__filme-destaque {
+    display: flex;
+    justify-content: space-around;
+
+    width: 193px;
+    height: 52px;
+    margin: 1vh 0 2vh 3vw;
+    padding: 15px;
+
+    background: #485265;
+
+    border: 0px;
+    border-radius: 8px;
+
+    cursor: pointer;
+    text-decoration: none;
+
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 19px;
+}
+
+.icone-play__filme-destaque {
+    width: 40px;
+    height: 20px;
+}
+
+.generos__filme-destaque {
+    display: flex;
+
+    padding-left: 2vw;
+
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 19px;
+
+    color: var(--cor-do-genero-destaque);
+}
+
+.input,
+.input::placeholder {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 19px;
+}
+
+.barra-de-pesquisa {
+    display: flex;
+    justify-content: center;
+
+    padding: 13vh 0 10vh 0;
+}
+
+.input {
+    position: relative;
+    background: unset;
+
+    width: 700px;
+
+    margin-bottom: 40px;
+    padding: 15px 0 15px 3vw;
+    border: 2px solid var(--cor-input);
+    border-radius: 30px;
+
+    color: var(--cor-input);
+}
+
+.icone-lupa__pesquisa {
+    position: absolute;
+
+    padding: 15px 0 15px 1vw;
+}
+
+.h3__Em-Alta {
+    padding: 0 0 2vh 24.6vw;
+
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px;
+
+    color: var(--cor-principal-palavras);
+}
+
+.filmes-em-alta,
+.filmes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 34px;
+
+    padding-bottom: 40px;
+}
+
+.botao-proximo,
+.botao-anterior {
+    cursor: pointer;
+}
+
+.filme {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 95%;
+
+    width: 168px;
+    height: 300px;
+
+    display: flex;
+    flex-direction: column;
+
+    box-shadow: var(--cor-shadow);
+
+    cursor: pointer;
+}
+
+.informacao__filme {
+    background-color: rgba(16, 17, 17, 0.5);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-top: auto;
+    padding: 10px 8px;
+}
+
+.titulo__filme,
+.nota__filme {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+}
+
+.titulo__filme {
+    color: var(--cor-principal-palavras);
+
+    max-width: 100px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.nota__filme {
+    color: var(--cor-nota-filme);
+
+    max-width: 38.3px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: unset;
+}
+
+h3 {
+    padding: 0 0 2vh 24.6vw;
+
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+
+    color: var(--cor-principal-palavras);
+}
+
+.categoria {
+    padding: 0 0 2vh 24.6vw;
+
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px;
+
+    color: var(--categorias);
+}
+
+/*Ação*/
+.Filmes__GeneroAcao,
+.filmes__Acao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 34px;
+
+    padding-bottom: 40px;
+}
+
+.btnAnterior__Acao,
+.btnProximo__Acao {
+    cursor: pointer;
+}
+
+.filme__Acao {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 95%;
+
+    width: 168px;
+    height: 300px;
+
+    display: flex;
+    flex-direction: column;
+
+    box-shadow: var(--cor-shadow);
+
+    cursor: pointer;
+}
+
+
+/*Animação*/
+
+.Filmes__GeneroAnimacao,
+.filmes__Animacao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 34px;
+
+    padding-bottom: 40px;
+}
+
+.btnAnterior__Animacao,
+.btnProximo__Animacao {
+    cursor: pointer;
+}
+
+.filme__Animacao {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 95%;
+
+    width: 168px;
+    height: 300px;
+
+    display: flex;
+    flex-direction: column;
+
+    box-shadow: var(--cor-shadow);
+
+    cursor: pointer;
+}
+
+/*Aventura*/
+
+.Filmes__GeneroAventura,
+.filmes__Aventura {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 34px;
+
+    padding-bottom: 40px;
+}
+
+.btnAnterior__Aventura,
+.btnProximo__Aventura {
+    cursor: pointer;
+}
+
+.filme__Aventura {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 95%;
+
+    width: 168px;
+    height: 300px;
+
+    display: flex;
+    flex-direction: column;
+
+    box-shadow: var(--cor-shadow);
+
+    cursor: pointer;
+}
+
+
+/*Comédia*/
+
+.Filmes__GeneroComedia,
+.filmes__Comedia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 34px;
+
+    padding-bottom: 40px;
+}
+
+.btnAnterior__Comedia,
+.btnProximo__Comedia {
+    cursor: pointer;
+}
+
+.filme__Comedia {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 95%;
+
+    width: 168px;
+    height: 300px;
+
+    display: flex;
+    flex-direction: column;
+
+    box-shadow: var(--cor-shadow);
+
+    cursor: pointer;
+}
+
+
+
+/*Drama*/
+
+.Filmes__GeneroDrama,
+.filmes__Drama {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 34px;
+
+    padding-bottom: 40px;
+}
+
+.btnAnterior__Drama,
+.btnProximo__Drama {
+    cursor: pointer;
+}
+
+.filme__Drama {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 95%;
+
+    width: 168px;
+    height: 300px;
+
+    display: flex;
+    flex-direction: column;
+
+    box-shadow: var(--cor-shadow);
+
+    cursor: pointer;
+}
+
+
+
+/*Fantasia*/
+
+.Filmes__GeneroFantasia,
+.filmes__Fantasia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 34px;
+
+    padding-bottom: 40px;
+}
+
+.btnAnterior__Fantasia,
+.btnProximo__Fantasia {
+    cursor: pointer;
+}
+
+.filme__Fantasia {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 95%;
+
+    width: 168px;
+    height: 300px;
+
+    display: flex;
+    flex-direction: column;
+
+    box-shadow: var(--cor-shadow);
+
+    cursor: pointer;
+}
+
+
+
+/*Ficção*/
+
+.Filmes__GeneroFiccao,
+.filmes__Ficcao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 34px;
+
+    padding-bottom: 40px;
+}
+
+.btnAnterior__Ficcao,
+.btnProximo__Ficcao {
+    cursor: pointer;
+}
+
+.filme__Ficcao {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 95%;
+
+    width: 168px;
+    height: 300px;
+
+    display: flex;
+    flex-direction: column;
+
+    box-shadow: var(--cor-shadow);
+
+    cursor: pointer;
+}
+
+/*Suspense*/
+
+.Filmes__GeneroSuspense,
+.filmes__Suspense {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 34px;
+
+    padding-bottom: 40px;
+}
+
+.btnAnterior__Suspense,
+.btnProximo__Suspense {
+    cursor: pointer;
+}
+
+.filme__Suspense {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 95%;
+
+    width: 168px;
+    height: 300px;
+
+    display: flex;
+    flex-direction: column;
+
+    box-shadow: var(--cor-shadow);
+
+    cursor: pointer;
+}
+
+
+/*Terror*/
+
+.Filmes__GeneroTerror,
+.filmes__Terror {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 34px;
+
+    padding-bottom: 40px;
+}
+
+.btnAnterior__Terror,
+.btnProximo__Terror {
+    cursor: pointer;
+}
+
+.filme__Terror {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 95%;
+
+    width: 168px;
+    height: 300px;
+
+    display: flex;
+    flex-direction: column;
+
+    box-shadow: var(--cor-shadow);
+
+    cursor: pointer;
+}
+
+/*modal*/
+
+.modal {
+    background: rgba(0, 0, 0, 0.8);
+
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+
+    width: 100vw;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 100px;
+
+    overflow-y: scroll;
+}
+
+.hidden {
+    display: none;
+}
+
+.modal__fechar {
+    cursor: pointer;
+    align-self: flex-end;
+
+    margin-bottom: 10px;
+}
+
+.modal__titulo {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 60px;
+
+    color: var(--cor-principal-palavras);
+
+    margin-bottom: 40px;
+
+    padding: 0 10vw 0 10vw
+}
+
+.modal__img {
+    max-width: 730px;
+    margin-bottom: 20px;
+}
+
+.modal__descricao {
+    max-width: 730px;
+
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 29px;
+
+    color: var(--cor-principal-palavras);
+
+    margin-bottom: 20px;
+}
+
+.modal__genero-nota {
+    width: 730px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal__generos {
+    display: flex;
+    gap: 8px;
+}
+
+.modal__nota,
+.modal__genero {
+    border-radius: 8px;
+    padding: 10px;
+
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+
+    color: var(--cor-principal-palavras);
+}
+
+.modal__genero {
+    background: #D66853;
+}
+
+.modal__nota {
+    background: #EAA53E;
+}

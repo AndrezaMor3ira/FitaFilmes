@@ -1,0 +1,495 @@
+@media (max-width: 1180px) {
+
+    .input {
+        padding: 15px 0 15px 5vw;
+    }
+
+    .filmes-em-alta,
+    .filmes {
+        gap: 20px;
+    }
+
+    .categoria {
+        padding: 0px 0px 2vh 10.6vw;
+    }
+
+    .Filmes__GeneroAcao,
+    .filmes__Acao {
+        gap: 20px;
+    }
+
+    .Filmes__GeneroAnimacao,
+    .filmes__Animacao {
+        gap: 20px;
+    }
+
+    .Filmes__GeneroAventura,
+    .filmes__Aventura {
+        gap: 20px;
+    }
+
+    .Filmes__GeneroComedia,
+    .filmes__Comedia {
+        gap: 20px;
+    }
+
+    .Filmes__GeneroDrama,
+    .filmes__Drama {
+        gap: 20px;
+    }
+
+    .Filmes__GeneroFantasia,
+    .filmes__Fantasia {
+        gap: 20px;
+    }
+
+    .Filmes__GeneroFiccao,
+    .filmes__Ficcao {
+        gap: 20px;
+    }
+
+    .Filmes__GeneroSuspense,
+    .filmes__Suspense {
+        gap: 20px;
+    }
+
+    .Filmes__GeneroTerror,
+    .filmes__Terror {
+        gap: 20px
+    }
+
+    .modal__titulo {
+        font-size: 30px;
+    }
+
+    .modal__img {
+        max-width: 530px;
+    }
+
+    .modal__descricao {
+        max-width: 530px;
+        font-size: 16px;
+    }
+
+    .modal__genero-nota {
+        max-width: 530px;
+    }
+}
+
+@media (max-width: 1150px) {
+    .informacao-destaque {
+        width: 50vw;
+    }
+}
+
+@media (max-width: 1070px) {
+
+    .filmes-em-alta,
+    .filmes {
+        gap: 10px;
+    }
+
+    .categoria {
+        padding: 0px 0px 2vh 8.6vw;
+    }
+
+    .Filmes__GeneroAcao,
+    .filmes__Acao {
+        gap: 10px;
+    }
+
+    .Filmes__GeneroAnimacao,
+    .filmes__Animacao {
+        gap: 10px;
+    }
+
+    .Filmes__GeneroAventura,
+    .filmes__Aventura {
+        gap: 10px;
+    }
+
+    .Filmes__GeneroComedia,
+    .filmes__Comedia {
+        gap: 10px;
+    }
+
+    .Filmes__GeneroDrama,
+    .filmes__Drama {
+        gap: 10px;
+    }
+
+    .Filmes__GeneroFantasia,
+    .filmes__Fantasia {
+        gap: 10px;
+    }
+
+    .Filmes__GeneroFiccao,
+    .filmes__Ficcao {
+        gap: 10px;
+    }
+
+    .Filmes__GeneroSuspense,
+    .filmes__Suspense {
+        gap: 10px;
+    }
+
+    .Filmes__GeneroTerror,
+    .filmes__Terror {
+        gap: 10px
+    }
+
+}
+
+
+
+@media (max-width: 1010px) {
+
+    .filmes-em-alta,
+    .filmes {
+        justify-content: left;
+        margin-left: 0.5vw;
+    }
+
+    .Filmes__GeneroAcao,
+    .filmes__Acao {
+        justify-content: left;
+        margin-left: 0.5vw;
+    }
+
+    .Filmes__GeneroAnimacao,
+    .filmes__Animacao {
+        justify-content: left;
+        margin-left: 0.5vw;
+    }
+
+    .Filmes__GeneroAventura,
+    .filmes__Aventura {
+        justify-content: left;
+        margin-left: 0.5vw;
+    }
+
+    .Filmes__GeneroComedia,
+    .filmes__Comedia {
+        justify-content: left;
+        margin-left: 0.5vw;
+    }
+
+    .Filmes__GeneroDrama,
+    .filmes__Drama {
+        justify-content: left;
+        margin-left: 0.5vw;
+    }
+
+    .Filmes__GeneroFantasia,
+    .filmes__Fantasia {
+        justify-content: left;
+        margin-left: 0.5vw;
+    }
+
+    .Filmes__GeneroFiccao,
+    .filmes__Ficcao {
+        justify-content: left;
+        margin-left: 0.5vw;
+    }
+
+    .Filmes__GeneroSuspense,
+    .filmes__Suspense {
+        justify-content: left;
+        margin-left: 0.5vw;
+    }
+
+    .Filmes__GeneroTerror,
+    .filmes__Terror {
+        justify-content: left;
+        margin-left: 0.5vw;
+    }
+}
+
+@media (max-width: 990px) {
+    .informacao-destaque {
+        width: 60vw;
+    }
+
+    .categoria {
+        padding: 0px 0px 2vh 16vw;
+    }
+
+    .filme {
+        width: 138px;
+        height: 240px;
+    }
+
+    .filmes-em-alta,
+    .filmes {
+        justify-content: center;
+        margin-left: 0;
+    }
+
+    .Filmes__GeneroAcao,
+    .filmes__Acao {
+        justify-content: center;
+        margin-left: 0;
+    }
+
+    .Filmes__GeneroAnimacao,
+    .filmes__Animacao {
+        justify-content: center;
+        margin-left: 0;
+    }
+
+    .Filmes__GeneroAventura,
+    .filmes__Aventura {
+        justify-content: center;
+        margin-left: 0;
+    }
+
+    .Filmes__GeneroComedia,
+    .filmes__Comedia {
+        justify-content: center;
+        margin-left: 0;
+    }
+
+    .Filmes__GeneroDrama,
+    .filmes__Drama {
+        justify-content: center;
+        margin-left: 0;
+    }
+
+    .Filmes__GeneroFantasia,
+    .filmes__Fantasia {
+        justify-content: center;
+        margin-left: 0;
+    }
+
+    .Filmes__GeneroFiccao,
+    .filmes__Ficcao {
+        justify-content: center;
+        margin-left: 0;
+    }
+
+    .Filmes__GeneroSuspense,
+    .filmes__Suspense {
+        justify-content: center;
+        margin-left: 0;
+    }
+
+    .Filmes__GeneroTerror,
+    .filmes__Terror {
+        justify-content: center;
+        margin-left: 0;
+    }
+
+    .modal__titulo {
+        font-size: 26px;
+    }
+
+    .modal__fechar {
+        max-width: 30px;
+    }
+
+}
+
+@media (max-width: 865px) {
+    .informacao-destaque {
+        width: 80vw;
+    }
+
+    .modal__titulo {
+        line-height: 40px;
+    }
+
+    .modal__fechar {
+        margin-left: 8vw;
+    }
+
+    .filmes-em-alta,
+    .filmes {
+        justify-content: left;
+        margin-left: 0.5vw;
+    }
+
+    .Filmes__GeneroAcao,
+    .filmes__Acao {
+        justify-content: left;
+        margin-left: 0.5vw;
+    }
+
+    .Filmes__GeneroAnimacao,
+    .filmes__Animacao {
+        justify-content: left;
+        margin-left: 0.5vw;
+    }
+
+    .Filmes__GeneroAventura,
+    .filmes__Aventura {
+        justify-content: left;
+        margin-left: 0.5vw;
+    }
+
+    .Filmes__GeneroComedia,
+    .filmes__Comedia {
+        justify-content: left;
+        margin-left: 0.5vw;
+    }
+
+    .Filmes__GeneroDrama,
+    .filmes__Drama {
+        justify-content: left;
+        margin-left: 0.5vw;
+    }
+
+    .Filmes__GeneroFantasia,
+    .filmes__Fantasia {
+        justify-content: left;
+        margin-left: 0.5vw;
+    }
+
+    .Filmes__GeneroFiccao,
+    .filmes__Ficcao {
+        justify-content: left;
+        margin-left: 0.5vw;
+    }
+
+    .Filmes__GeneroSuspense,
+    .filmes__Suspense {
+        justify-content: left;
+        margin-left: 0.5vw;
+    }
+
+    .Filmes__GeneroTerror,
+    .filmes__Terror {
+        justify-content: left;
+        margin-left: 0.5vw;
+    }
+}
+
+@media (max-width: 840px) {
+    .filme {
+        width: 108px;
+        height: 240px;
+    }
+
+    .modal__fechar {
+        display: none;
+    }
+
+    .modal__titulo {
+        margin-top: 50px;
+    }
+
+    .input {
+        width: 500px;
+    }
+
+    .filmes-em-alta,
+    .filmes {
+        justify-content: center;
+        margin-left: 0;
+    }
+
+    .Filmes__GeneroAcao,
+    .filmes__Acao {
+        justify-content: center;
+        margin-left: 0;
+    }
+
+    .Filmes__GeneroAnimacao,
+    .filmes__Animacao {
+        justify-content: center;
+        margin-left: 0;
+    }
+
+    .Filmes__GeneroAventura,
+    .filmes__Aventura {
+        justify-content: center;
+        margin-left: 0;
+    }
+
+    .Filmes__GeneroComedia,
+    .filmes__Comedia {
+        justify-content: center;
+        margin-left: 0;
+    }
+
+    .Filmes__GeneroDrama,
+    .filmes__Drama {
+        justify-content: center;
+        margin-left: 0;
+    }
+
+    .Filmes__GeneroFantasia,
+    .filmes__Fantasia {
+        justify-content: center;
+        margin-left: 0;
+    }
+
+    .Filmes__GeneroFiccao,
+    .filmes__Ficcao {
+        justify-content: center;
+        margin-left: 0;
+    }
+
+    .Filmes__GeneroSuspense,
+    .filmes__Suspense {
+        justify-content: center;
+        margin-left: 0;
+    }
+
+    .Filmes__GeneroTerror,
+    .filmes__Terror {
+        justify-content: center;
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 700px) {
+    .filme {
+        width: 100px;
+        height: 160px;
+    }
+
+    .btn-style {
+        width: 20px;
+    }
+
+    .input {
+        width: 400px;
+    }
+
+    .informacao-destaque {
+        width: 80vw;
+    }
+
+    .sinopse__filme-destaque {
+        font-size: 16px;
+    }
+
+    .categoria {
+        padding: 0px 0px 2vh 10vw;
+    }
+
+}
+
+@media (max-width: 642px) {
+    .modal__img {
+        width: 400px;
+    }
+
+    .modal__titulo {
+        font-size: 18px;
+        width: 400px;
+    }
+
+    .modal__descricao {
+        font-size: 14px;
+    }
+
+    .modal__genero-nota {
+        width: 400px;
+    }
+
+    .filme {
+        width: 90px;
+        height: 140px;
+    }
+}
