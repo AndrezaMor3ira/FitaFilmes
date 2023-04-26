@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fita Filme</title>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="./css/responsividade.css">
+    <script src="./js/script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <img class="logo" src="./assets/Logo.svg" alt="Logo">
+        <h1 class="header__titulo">Fita Filmes</h1>
+        <img class="header__botao-tema" src="./assets/Lua.svg" alt="Botão de tema.">
+    </header>
+    <div class="filme-destaque">
+        <div class="filme-do-dia"></div>
+        <div class="informacao-destaque">
+            <div class="titulo-nota__filme-destaque">
+                <h2 class="titulo__filme-destaque"></h2>
+                <p class="nota__filme-destaque">1,98</p>
+            </div>
+            <div class="organizacao-sinopse__filme-destaque">
+                <hr class="hr__filme-destaque">
+                <p class="sinopse__filme-destaque"></p>
+            </div>
+            <a class="btn__filme-destaque">Assista o trailler <img class="icone-play__filme-destaque"
+                    src="./assets/Play.svg"></a>
+            <div class="generos__filme-destaque">
+                <span class="genero-filme__filme-destaque"></span>
+                /
+                <span class="data-filme__filme-destaque"></span>
+            </div>
+        </div>
+    </div>
+    <div class="barra-de-pesquisa">
+        <div>
+            <img class="icone-lupa__pesquisa" src="./assets/Lupa.svg">
+            <input class="input" type="text" placeholder="Pesquise o nome do filme....">
+        </div>
+    </div>
+    <h4 class="categoria">Em Alta</h4>
+    <div class="filmes-em-alta">
+
+        <img class="btn-style botao-anterior" src="./assets/SetaEsquerdaBranca.svg" alt="Seta esquerda">
+        <div class="filmes">
+
+        </div>
+        <img class="btn-style botao-proximo" src="./assets/SetaDireitaBranca.svg" alt="Seta direita">
+    </div>
+    <h4 class="categoria">Ação</h4>
+    <div class="Filmes__GeneroAcao">
+
+        <img class="btn-style btnAnterior__Acao" src="./assets/SetaEsquerdaBranca.svg" alt="Seta esquerda">
+        <div class="filmes__Acao">
+        </div>
+        <img class="btn-style btnProximo__Acao" src="./assets/SetaDireitaBranca.svg" alt="Seta direita">
+    </div>
+
+    <h4 class="categoria">Animação</h4>
+    <div class="Filmes__GeneroAnimacao">
+
+        <img class="btn-style btnAnterior__Animacao" src="./assets/SetaEsquerdaBranca.svg" alt="Seta esquerda">
+        <div class="filmes__Animacao">
+        </div>
+        <img class="btn-style btnProximo__Animacao" src="./assets/SetaDireitaBranca.svg" alt="Seta direita">
+    </div>
+
+    <h4 class="categoria">Aventura</h4>
+    <div class="Filmes__GeneroAventura">
+
+        <img class="btn-style btnAnterior__Aventura" src="./assets/SetaEsquerdaBranca.svg" alt="Seta esquerda">
+        <div class="filmes__Aventura">
+        </div>
+        <img class="btn-style btnProximo__Aventura" src="./assets/SetaDireitaBranca.svg" alt="Seta direita">
+    </div>
+
+    <h4 class="categoria">Comédia</h4>
+    <div class="Filmes__GeneroComedia">
+
+        <img class="btn-style btnAnterior__Comedia" src="./assets/SetaEsquerdaBranca.svg" alt="Seta esquerda">
+        <div class="filmes__Comedia">
+        </div>
+        <img class="btn-style btnProximo__Comedia" src="./assets/SetaDireitaBranca.svg" alt="Seta direita">
+    </div>
+
+    <h4 class="categoria">Drama</h4>
+    <div class="Filmes__GeneroDrama">
+
+        <img class="btn-style btnAnterior__Drama" src="./assets/SetaEsquerdaBranca.svg" alt="Seta esquerda">
+        <div class="filmes__Drama">
+        </div>
+        <img class="btn-style btnProximo__Drama" src="./assets/SetaDireitaBranca.svg" alt="Seta direita">
+    </div>
+
+    <h4 class="categoria">Fantasia</h4>
+    <div class="Filmes__GeneroFantasia">
+
+        <img class="btn-style btnAnterior__Fantasia" src="./assets/SetaEsquerdaBranca.svg" alt="Seta esquerda">
+        <div class="filmes__Fantasia">
+        </div>
+        <img class="btn-style btnProximo__Fantasia" src="./assets/SetaDireitaBranca.svg" alt="Seta direita">
+    </div>
+
+    <h4 class="categoria">Ficção Cientifica</h4>
+    <div class="Filmes__GeneroFiccao">
+
+        <img class="btn-style btnAnterior__Ficcao" src="./assets/SetaEsquerdaBranca.svg" alt="Seta esquerda">
+        <div class="filmes__Ficcao">
+        </div>
+        <img class="btn-style btnProximo__Ficcao" src="./assets/SetaDireitaBranca.svg" alt="Seta direita">
+    </div>
+
+    <h4 class="categoria">Suspense</h4>
+    <div class="Filmes__GeneroSuspense">
+
+        <img class="btn-style btnAnterior__Suspense" src="./assets/SetaEsquerdaBranca.svg" alt="Seta esquerda">
+        <div class="filmes__Suspense">
+        </div>
+        <img class="btn-style btnProximo__Suspense" src="./assets/SetaDireitaBranca.svg" alt="Seta direita">
+    </div>
+
+    <h4 class="categoria">Terror</h4>
+    <div class="Filmes__GeneroTerror">
+
+        <img class="btn-style btnAnterior__Terror" src="./assets/SetaEsquerdaBranca.svg" alt="Seta esquerda">
+        <div class="filmes__Terror">
+        </div>
+        <img class="btn-style btnProximo__Terror" src="./assets/SetaDireitaBranca.svg" alt="Seta direita">
+    </div>
+
+
+    <div class="modal hidden">
+        <img src="./assets/x.svg" alt="Fechar" class="modal__fechar">
+        <h3 class="modal__titulo"></h3>
+        <img class="modal__img">
+        <p class="modal__descricao"></p>
+        <div class="modal__genero-nota">
+            <div class="modal__generos"></div>
+            <div class="modal__nota"></div>
+        </div>
+
+    </div>
+</body>
+
+</html>
